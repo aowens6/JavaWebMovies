@@ -16,7 +16,7 @@ public class DirectorFirstNameComparator implements Comparator<Movie> {
 	@Override
 	public int compare(Movie m1, Movie m2) {
 
-		return m1.getDirectorFirstName().toLowerCase().compareTo(m2.getDirectorFirstName().toLowerCase());
+		return m1.getDirectorFirstName().compareToIgnoreCase(m2.getDirectorFirstName());
 	}
 
 }
